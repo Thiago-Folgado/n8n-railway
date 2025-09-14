@@ -18,5 +18,5 @@ ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
 # Expõe a porta
 EXPOSE 5678
 
-# Comando para iniciar o N8N
-CMD ["n8n", "start"]
+# Comando para iniciar o N8N (usando o caminho completo)
+CMD ["/usr/local/bin/n8n", "start"]
